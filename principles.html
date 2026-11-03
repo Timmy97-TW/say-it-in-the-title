@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Principles · Say It In The Title</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .testq{
+    font-size:clamp(26px,4.2vw,42px);font-weight:600;letter-spacing:-.028em;
+    line-height:1.14;color:var(--green);margin:34px 0 16px;max-width:860px
+  }
+  .rule{font-size:clamp(19px,2.2vw,23px);font-weight:600;letter-spacing:-.018em;line-height:1.3;margin:0 0 10px}
+  .anat{max-width:660px}
+  .figrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:24px 0}
+  .stack{display:flex;flex-direction:column;gap:20px}
+  .lead-n{
+    font-family:var(--mono);font-size:12px;letter-spacing:.07em;color:var(--green);
+    font-weight:600;display:block;margin-bottom:9px
+  }
+  .verbs{font-weight:600;color:var(--green)}
+  @media (max-width:900px){.figrow{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-lang="en">
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="index.html">Say It In The Title</a>
+  <div class="nav-links">
+    <a href="principles.html" class="on"><span lang="en">Principles</span><span lang="zh">原則</span></a>
+    <a href="review.html"><span lang="en">Deck review</span><span lang="zh">逐頁檢視</span></a>
+    <button id="langbtn" class="langbtn" type="button">繁體中文</button>
+  </div>
+</div></nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">How to write a slide title</span><span lang="zh">如何寫投影片標題</span></p>
+    <h1><span lang="en">The title is the sentence the slide proves.</span><span lang="zh">標題，就是這張投影片要證明的那一句話。</span></h1>
+    <p class="lede" lang="en">A topic label tells the audience what drawer the slide came from. A title tells them what you found. You have about thirty seconds per slide on stage, and half the room will have walked in since your last one, so spend that time stating a claim instead of announcing a category.</p>
+    <p class="lede" lang="zh">主題標籤只告訴觀眾這張投影片屬於哪個抽屜；真正的標題告訴他們你發現了什麼。在台上，每張投影片大約只有三十秒，而且台下有一半的人是在上一張之後才走進來的。把這三十秒用來提出一個主張，不要用來宣布一個分類。</p>
+
+    <p class="testq"><span lang="en">“What is the message of this slide?”</span><span lang="zh">「這張投影片想說的是什麼？」</span></p>
+    <p class="sub" lang="en">Answer out loud, in one full sentence with a verb. Write that sentence down. That is your title. If you cannot answer it, the problem is not the title, it is that the slide has nothing to say yet.</p>
+    <p class="sub" lang="zh">大聲回答，用一個有動詞的完整句子。把那句話寫下來，那就是你的標題。如果你答不出來，問題不在標題，而是這張投影片目前還沒有東西可說。</p>
+  </div>
+</header>
+
+<!-- ============ ONE MINUTE ============ -->
+<section id="quick">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">The one-minute version</span><span lang="zh">一分鐘版本</span></p>
+    <h2><span lang="en">Five things you can fix tonight</span><span lang="zh">今晚就能改掉的五件事</span></h2>
+
+    <ol class="clean">
+      <li lang="en"><strong>Write the title as a sentence with a verb.</strong> If it has no verb, it is a label, not a title.</li>
+      <li lang="zh"><strong>標題要寫成有動詞的句子。</strong>沒有動詞，那就是標籤，不是標題。</li>
+
+      <li lang="en"><strong>Put the number in the title.</strong> “Chlorophyll rose 35%” beats “Chlorophyll improved”, and it stops you saying a different number out loud.</li>
+      <li lang="zh"><strong>把數字放進標題。</strong>「葉綠素含量上升 35%」勝過「葉綠素含量有改善」，而且可以避免你嘴上講出另一個數字。</li>
+
+      <li lang="en"><strong>One claim per slide.</strong> If your title needs the word “and” to join two results, you are holding two slides.</li>
+      <li lang="zh"><strong>一張投影片一個主張。</strong>如果標題要用「以及」才能把兩個結果串起來，那其實是兩張投影片。</li>
+
+      <li lang="en"><strong>Delete every label you will not say out loud.</strong> Anything left on the figure that you never mention is competing with the thing you do mention.</li>
+      <li lang="zh"><strong>刪掉所有你不會唸出來的標示。</strong>圖上留著卻從不提及的東西，正在跟你真正要講的東西搶注意力。</li>
+
+      <li lang="en"><strong>Make the one number you want remembered the largest thing on the slide.</strong> Not the logo, not the title bar, not the arrow.</li>
+      <li lang="zh"><strong>讓你最希望觀眾記住的那個數字，成為整張投影片上最大的東西。</strong>不是 logo，不是標題列，也不是箭頭。</li>
+    </ol>
+
+    <div class="toc">
+      <a href="#fail"><span lang="en">Why topic titles fail</span><span lang="zh">主題式標題為何失敗</span></a>
+      <a href="#anatomy"><span lang="en">Anatomy of a title</span><span lang="zh">標題的結構</span></a>
+      <a href="#types"><span lang="en">Five types that work</span><span lang="zh">五種有效的標題</span></a>
+      <a href="#tests"><span lang="en">The title tests</span><span lang="zh">標題的檢查</span></a>
+      <a href="#check"><span lang="en">Try it yourself</span><span lang="zh">自己試試看</span></a>
+      <a href="#design"><span lang="en">Designing the slide</span><span lang="zh">設計標題下面的投影片</span></a>
+      <a href="#builds"><span lang="en">Build animations</span><span lang="zh">逐步動畫</span></a>
+      <a href="#budget"><span lang="en">Slide budget</span><span lang="zh">投影片預算</span></a>
+      <a href="#checklist"><span lang="en">Night-before checklist</span><span lang="zh">前一晚檢查表</span></a>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ WHY TOPIC TITLES FAIL ============ -->
+<section id="fail">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">Show, don’t assert</span><span lang="zh">用對照看，不用嘴巴說</span></p>
+    <h2><span lang="en">Why topic titles fail</span><span lang="zh">主題式標題為何失敗</span></h2>
+    <p lang="en">Every title on the left below is real, taken from a ten-minute iGEM stage talk. None of them is lazy writing. They are all the honest name of the folder the work lives in. The problem is that a name is not a finding, and the audience came for the finding.</p>
+    <p lang="zh">下面左欄的每個標題都是真的，來自一場十分鐘的 iGEM 台上簡報。它們都不是隨便寫的，而是誠實地說出這份工作放在哪個資料夾裡。問題在於：資料夾名稱不是發現，而觀眾是為了發現而來的。</p>
+
+    <div class="cmp">
+      <div class="cmp-item cmp-bad">
+        <div class="cmp-tag"><span lang="en">Topic label</span><span lang="zh">主題標籤</span></div>
+        <div class="cmp-title" lang="en">Plant Assays - Agar</div>
+        <div class="cmp-title" lang="zh">Plant Assays - Agar</div>
+        <div class="cmp-why" lang="en">Tells the audience which cultivation system the plates came from. It does not tell them whether anything worked.</div>
+        <div class="cmp-why" lang="zh">只告訴觀眾這些培養皿來自哪一種栽培系統，沒有告訴他們到底有沒有效。</div>
+      </div>
+      <div class="cmp-item cmp-good">
+        <div class="cmp-tag"><span lang="en">Action title</span><span lang="zh">行動式標題</span></div>
+        <div class="cmp-title" lang="en">ACCD restored chlorophyll in heat-stressed <em>Arabidopsis</em>; LEA14 and BoPEP4 did the same under salt</div>
+        <div class="cmp-title" lang="zh">ACCD 讓熱逆境下的 <em>Arabidopsis</em> 恢復葉綠素含量；LEA14 與 BoPEP4 在鹽逆境下也有同樣效果</div>
+        <div class="cmp-why" lang="en">Now the audience can check you. They look at the plates and the bars and ask whether the claim holds. Note that this rewrite still needs a semicolon to carry two experiments, which is the signal that the slide should be two slides.</div>
+        <div class="cmp-why" lang="zh">現在觀眾可以檢驗你。他們會看培養皿、看長條圖，判斷這個主張成不成立。注意這個改寫仍然要用分號才裝得下兩個實驗，這就是「這張應該拆成兩張」的訊號。</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="cmp-item cmp-bad">
+        <div class="cmp-tag"><span lang="en">Topic label</span><span lang="zh">主題標籤</span></div>
+        <div class="cmp-title" lang="en">Biosafety</div>
+        <div class="cmp-title" lang="zh">Biosafety</div>
+        <div class="cmp-why" lang="en">One word, and it is the name of a judging criterion, not a result. The actual result sits at the bottom of the slide, where it is read last.</div>
+        <div class="cmp-why" lang="zh">一個字，而且是評審項目的名稱，不是結果。真正的結果被放在投影片最下方，也就是最後才被讀到的位置。</div>
+      </div>
+      <div class="cmp-item cmp-good">
+        <div class="cmp-tag"><span lang="en">Action title</span><span lang="zh">行動式標題</span></div>
+        <div class="cmp-title" lang="en">No <em>B. subtilis</em> grew on the outer side of the membrane</div>
+        <div class="cmp-title" lang="zh">膜的外側沒有長出任何 <em>B. subtilis</em></div>
+        <div class="cmp-why" lang="en">Nine words and the whole slide is already understood. The two plates below become evidence for a claim the audience has in mind, instead of a puzzle they have to solve.</div>
+        <div class="cmp-why" lang="zh">九個字，整張投影片就已經被理解了。下面那兩盤培養皿變成「支持某個主張的證據」，而不是觀眾必須自己解的謎題。</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="cmp-item cmp-bad">
+        <div class="cmp-tag"><span lang="en">Topic label</span><span lang="zh">主題標籤</span></div>
+        <div class="cmp-title" lang="en">Software</div>
+        <div class="cmp-title" lang="zh">Software</div>
+        <div class="cmp-why" lang="en">The word names a discipline. It gives the audience no reason to care, and it does nothing to help them choose between the six bullets and the screenshot underneath it.</div>
+        <div class="cmp-why" lang="zh">這個字只說出一個學門。它沒有給觀眾任何在意的理由，也沒有幫他們在下面六個條列和一張截圖之間做選擇。</div>
+      </div>
+      <div class="cmp-item cmp-good">
+        <div class="cmp-tag"><span lang="en">Action title</span><span lang="zh">行動式標題</span></div>
+        <div class="cmp-title" lang="en">Farmers get a timed recommendation on their phone, and they decide</div>
+        <div class="cmp-title" lang="zh">農民在手機上收到附時間的建議，而決定權仍在農民手上</div>
+        <div class="cmp-why" lang="en">This is the sentence the team actually says out loud, and it is the part a judge remembers: the software advises, the human chooses. Put the spoken sentence on the slide.</div>
+        <div class="cmp-why" lang="zh">這正是團隊口頭說出來的那句話，也是評審會記住的部分：軟體給建議，人做決定。把你會講出來的那句話放到投影片上。</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="cmp-item cmp-bad">
+        <div class="cmp-tag"><span lang="en">Topic label</span><span lang="zh">主題標籤</span></div>
+        <div class="cmp-title" lang="en">Our Products</div>
+        <div class="cmp-title" lang="zh">Our Products</div>
+        <div class="cmp-why" lang="en">The three prices the speaker quotes out loud (2,280 / 90 / 125 USD) appear nowhere on the slide. The one thing an audience writes down is the one thing they cannot read.</div>
+        <div class="cmp-why" lang="zh">講者口頭報出的三個價格（2,280 / 90 / 125 USD）在投影片上完全看不到。觀眾唯一會抄下來的東西，正好是他們讀不到的東西。</div>
+      </div>
+      <div class="cmp-item cmp-good">
+        <div class="cmp-tag"><span lang="en">Action title</span><span lang="zh">行動式標題</span></div>
+        <div class="cmp-title" lang="en">Three products, 2,280 / 90 / 125 USD: one install and two consumables</div>
+        <div class="cmp-title" lang="zh">三項產品，2,280 / 90 / 125 USD：一次安裝，兩種耗材</div>
+        <div class="cmp-why" lang="en">A business model in twelve words. “One install and two consumables” is the shape of the revenue, and it is the question a judge was going to ask anyway.</div>
+        <div class="cmp-why" lang="zh">用十二個字講完一個商業模式。「一次安裝、兩種耗材」就是收入的形狀，而這正是評審本來就要問的問題。</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="cmp-item cmp-bad">
+        <div class="cmp-tag"><span lang="en">Topic label</span><span lang="zh">主題標籤</span></div>
+        <div class="cmp-title" lang="en">The Bioreactor <span class="sub">Where the system is contained.</span></div>
+        <div class="cmp-title" lang="zh">The Bioreactor <span class="sub">Where the system is contained.</span></div>
+        <div class="cmp-why" lang="en">The slide itself is well built: four clean cards around a good render. But the subtitle describes a location instead of a mechanism, so the four cards have to do all the work.</div>
+        <div class="cmp-why" lang="zh">這張投影片本身做得很好：一張不錯的算圖，四張乾淨的卡片。但副標只說了「在哪裡」而不是「怎麼辦到的」，所有的工作就只好丟給那四張卡片。</div>
+      </div>
+      <div class="cmp-item cmp-good">
+        <div class="cmp-tag"><span lang="en">Action title</span><span lang="zh">行動式標題</span></div>
+        <div class="cmp-title" lang="en">A 2 µm hollow-fibre membrane keeps the cells in and lets the protectant out</div>
+        <div class="cmp-title" lang="zh">2 µm 中空纖維膜把細胞留在裡面，讓保護蛋白流出去</div>
+        <div class="cmp-why" lang="en">The pore size is the whole engineering argument, and it is falsifiable: either cells cross it or they do not. The biosafety slide later in the deck is the test of exactly this sentence.</div>
+        <div class="cmp-why" lang="zh">孔徑就是整個工程論證，而且它可被否證：細胞要嘛穿得過去，要嘛穿不過去。後面那張生物安全投影片，檢驗的正是這一句話。</div>
+      </div>
+    </div>
+
+    <div class="cmp">
+      <div class="cmp-item cmp-bad">
+        <div class="cmp-tag"><span lang="en">Topic label</span><span lang="zh">主題標籤</span></div>
+        <div class="cmp-title" lang="en">The System</div>
+        <div class="cmp-title" lang="zh">The System</div>
+        <div class="cmp-why" lang="en">Worth looking at closely, because this slide already contains its own title. Three lines sit below the figure in large type: Predict the stress. Switch the cells on with green light. Let the protein out and keep the cells in. That is the claim, printed in the wrong place and competing with the label above it.</div>
+        <div class="cmp-why" lang="zh">這張值得仔細看，因為它其實已經把標題寫好了。圖下方有三行大字：預測逆境、用綠光開啟細胞、讓蛋白出去而細胞留下。那就是主張，只是印錯位置，還反過來跟上面的標籤互相競爭。</div>
+      </div>
+      <div class="cmp-item cmp-good">
+        <div class="cmp-tag"><span lang="en">Action title</span><span lang="zh">行動式標題</span></div>
+        <div class="cmp-title" lang="en">Predict the stress, switch the cells on with green light, let the protein out and keep the cells in</div>
+        <div class="cmp-title" lang="zh">預測逆境、用綠光開啟細胞、讓蛋白出去而細胞留下</div>
+        <div class="cmp-why" lang="en">Promote the three lines to the title and delete them from the body. The slide then has one voice instead of two, and the pipeline figure underneath becomes an illustration of a sentence the audience has already read.</div>
+        <div class="cmp-why" lang="zh">把那三行升級成標題，並從內文刪掉。這樣整張投影片只有一個聲音，下面的流程圖也變成「觀眾已經讀過的那句話」的插圖。</div>
+      </div>
+    </div>
+
+    <figure class="slide">
+      <img src="assets/slides/s07.webp" alt="A slide titled The System: a pale green band of seven pictorial pipeline icons, with three large takeaway lines printed below the figure." loading="lazy">
+      <figcaption>
+        <span lang="en">The title at the top is a label. The three lines under the figure are the real title, set larger than the title itself.</span>
+        <span lang="zh">上方的標題是標籤；圖下方那三行才是真正的標題，而且字還比標題本身大。</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ ANATOMY ============ -->
+<section id="anatomy">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">Anatomy</span><span lang="zh">結構</span></p>
+    <h2><span lang="en">What an action title is made of</span><span lang="zh">一個行動式標題由什麼組成</span></h2>
+    <p lang="en">Four parts, three of them compulsory. Once you can see the parts, you can diagnose a weak title in about five seconds: the missing piece is almost always the verb.</p>
+    <p lang="zh">四個部分，其中三個是必要的。看得出這些部分之後，你大概五秒就能診斷出一個無力的標題，而缺的那一塊幾乎都是動詞。</p>
+
+    <svg class="anat" viewBox="0 0 620 356" xmlns="http://www.w3.org/2000/svg" lang="en" role="img" aria-label="Diagram decomposing the title ACCD restored chlorophyll in heat-stressed Arabidopsis into subject, verb, readout and condition.">
+      <text x="0" y="32" font-size="25" font-weight="600" letter-spacing="-0.6" font-family="inherit">
+        <tspan fill="var(--green)">ACCD</tspan><tspan dx="9" fill="var(--amber)">restored</tspan><tspan dx="9" fill="var(--blue)">chlorophyll</tspan>
+      </text>
+      <text x="0" y="68" font-size="25" font-weight="600" letter-spacing="-0.6" fill="var(--ink-3)" font-family="inherit">in heat-stressed <tspan font-style="italic">Arabidopsis</tspan></text>
+      <line x1="0" y1="98" x2="620" y2="98" stroke="var(--line-2)" stroke-width="1"/>
+
+      <rect x="0" y="112" width="5" height="44" rx="2.5" fill="var(--green)"/>
+      <text x="18" y="128" font-size="16" font-family="inherit"><tspan font-weight="600" fill="var(--green)">ACCD</tspan><tspan dx="12" font-size="11.5" letter-spacing="1.3" fill="var(--ink-4)">SUBJECT</tspan></text>
+      <text x="18" y="150" font-size="13.5" fill="var(--ink-2)" font-family="inherit">What you changed or added. Name it. Never “the treatment”.</text>
+
+      <rect x="0" y="174" width="5" height="44" rx="2.5" fill="var(--amber)"/>
+      <text x="18" y="190" font-size="16" font-family="inherit"><tspan font-weight="600" fill="var(--amber)">restored</tspan><tspan dx="12" font-size="11.5" letter-spacing="1.3" fill="var(--ink-4)">VERB</tspan></text>
+      <text x="18" y="212" font-size="13.5" fill="var(--ink-2)" font-family="inherit">What happened. A result verb, not “was analysed”.</text>
+
+      <rect x="0" y="236" width="5" height="44" rx="2.5" fill="var(--blue)"/>
+      <text x="18" y="252" font-size="16" font-family="inherit"><tspan font-weight="600" fill="var(--blue)">chlorophyll</tspan><tspan dx="12" font-size="11.5" letter-spacing="1.3" fill="var(--ink-4)">READOUT</tspan></text>
+      <text x="18" y="274" font-size="13.5" fill="var(--ink-2)" font-family="inherit">What you measured. The thing the figure actually plots.</text>
+
+      <rect x="0" y="298" width="5" height="44" rx="2.5" fill="var(--ink-3)"/>
+      <text x="18" y="314" font-size="16" font-family="inherit"><tspan font-weight="600" fill="var(--ink-3)">in heat-stressed Arabidopsis</tspan><tspan dx="12" font-size="11.5" letter-spacing="1.3" fill="var(--ink-4)">CONDITION</tspan></text>
+      <text x="18" y="336" font-size="13.5" fill="var(--ink-2)" font-family="inherit">Optional. The system and the stress, when they are not obvious.</text>
+    </svg>
+
+    <svg class="anat" viewBox="0 0 620 356" xmlns="http://www.w3.org/2000/svg" lang="zh" role="img" aria-label="標題結構圖：主詞、動詞、讀數、條件。">
+      <text x="0" y="32" font-size="25" font-weight="600" font-family="inherit">
+        <tspan fill="var(--ink-3)">熱逆境下，</tspan><tspan fill="var(--green)">ACCD</tspan><tspan dx="6" fill="var(--ink)">讓</tspan>
+      </text>
+      <text x="0" y="70" font-size="25" font-weight="600" font-family="inherit">
+        <tspan font-style="italic" fill="var(--ink)">Arabidopsis</tspan><tspan dx="6" fill="var(--ink)">的</tspan><tspan fill="var(--blue)">葉綠素含量</tspan><tspan fill="var(--amber)">回升</tspan>
+      </text>
+      <line x1="0" y1="98" x2="620" y2="98" stroke="var(--line-2)" stroke-width="1"/>
+
+      <rect x="0" y="112" width="5" height="44" rx="2.5" fill="var(--green)"/>
+      <text x="18" y="128" font-size="16" font-family="inherit"><tspan font-weight="600" fill="var(--green)">ACCD</tspan><tspan dx="12" font-size="12" letter-spacing="1" fill="var(--ink-4)">主詞</tspan></text>
+      <text x="18" y="150" font-size="13.5" fill="var(--ink-2)" font-family="inherit">你改變或加入的東西。講出名字，不要寫「處理組」。</text>
+
+      <rect x="0" y="174" width="5" height="44" rx="2.5" fill="var(--amber)"/>
+      <text x="18" y="190" font-size="16" font-family="inherit"><tspan font-weight="600" fill="var(--amber)">回升</tspan><tspan dx="12" font-size="12" letter-spacing="1" fill="var(--ink-4)">動詞</tspan></text>
+      <text x="18" y="212" font-size="13.5" fill="var(--ink-2)" font-family="inherit">發生了什麼。要用結果動詞，不是「進行分析」。</text>
+
+      <rect x="0" y="236" width="5" height="44" rx="2.5" fill="var(--blue)"/>
+      <text x="18" y="252" font-size="16" font-family="inherit"><tspan font-weight="600" fill="var(--blue)">葉綠素含量</tspan><tspan dx="12" font-size="12" letter-spacing="1" fill="var(--ink-4)">讀數</tspan></text>
+      <text x="18" y="274" font-size="13.5" fill="var(--ink-2)" font-family="inherit">你測量的量，也就是圖上真正畫出來的那個量。</text>
+
+      <rect x="0" y="298" width="5" height="44" rx="2.5" fill="var(--ink-3)"/>
+      <text x="18" y="314" font-size="16" font-family="inherit"><tspan font-weight="600" fill="var(--ink-3)">熱逆境下的 Arabidopsis</tspan><tspan dx="12" font-size="12" letter-spacing="1" fill="var(--ink-4)">條件</tspan></text>
+      <text x="18" y="336" font-size="13.5" fill="var(--ink-2)" font-family="inherit">選用。當系統和逆境條件不是不言自明時就要寫。</text>
+    </svg>
+
+    <p class="small" lang="en">The word order changes between English and Chinese, and the verb lands at the end in one of them. The four parts do not change. If you are presenting in one language and writing the wiki in the other, decompose the title first and rebuild it, rather than translating word by word.</p>
+    <p class="small" lang="zh">中英文的語序不同，動詞的位置也不一樣，但這四個部分完全相同。如果你用一種語言上台、用另一種語言寫 wiki，請先把標題拆成四個部分再重新組裝，不要逐字翻譯。</p>
+
+    <h3 style="margin-top:38px"><span lang="en">Grammar kit: verbs that commit you</span><span lang="zh">文法工具箱：會讓你負責的動詞</span></h3>
+    <p lang="en">The weak words on the left are safe because they promise nothing. That is exactly why they are useless on a slide. Every verb on the right forces you to be specific, and the third column is the price you pay for using it.</p>
+    <p lang="zh">左欄那些無力的字之所以安全，是因為它們什麼都沒承諾，而這正是它們在投影片上毫無用處的原因。右欄的每個動詞都逼你講得具體，第三欄則是你使用它必須付出的代價。</p>
+
+    <table class="t">
+      <thead>
+        <tr>
+          <th><span lang="en">Weak word</span><span lang="zh">無力的字</span></th>
+          <th><span lang="en">Verb that replaces it</span><span lang="zh">可以取代它的動詞</span></th>
+          <th><span lang="en">What the verb commits you to</span><span lang="zh">這個動詞逼你交代什麼</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="en">Analysis of</span><span lang="zh">……的分析</span></td>
+          <td><span class="verbs" lang="en">increased, fell by</span><span class="verbs" lang="zh">上升、下降</span></td>
+          <td><span lang="en">A direction and a size.</span><span lang="zh">一個方向，加一個幅度。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Results</span><span lang="zh">結果</span></td>
+          <td><span class="verbs" lang="en">restored, rescued</span><span class="verbs" lang="zh">恢復、挽救</span></td>
+          <td><span lang="en">A baseline you got back to, and how close you got.</span><span lang="zh">你回到的基準線，以及回到了多接近。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Characterisation of</span><span lang="zh">……的特性鑑定</span></td>
+          <td><span class="verbs" lang="en">binds, switches on, responds to</span><span class="verbs" lang="zh">結合、開啟、對……有反應</span></td>
+          <td><span lang="en">A mechanism you can draw in one figure.</span><span lang="zh">一個你能用一張圖畫出來的機制。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Overview</span><span lang="zh">總覽</span></td>
+          <td><span class="verbs" lang="en">predicts, then produces, then releases</span><span class="verbs" lang="zh">先預測、再生產、再釋出</span></td>
+          <td><span lang="en">An order of events you are willing to defend.</span><span lang="zh">一個你願意為它辯護的事件順序。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Study of</span><span lang="zh">……的研究</span></td>
+          <td><span class="verbs" lang="en">failed to, did not</span><span class="verbs" lang="zh">未能、沒有</span></td>
+          <td><span lang="en">A negative result you own in public. Judges like this one.</span><span lang="zh">一個你公開承認的陰性結果。評審很欣賞這種。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Testing of</span><span lang="zh">……的測試</span></td>
+          <td><span class="verbs" lang="en">survived, held, contained</span><span class="verbs" lang="zh">存活、維持、阻隔</span></td>
+          <td><span lang="en">A condition and a duration.</span><span lang="zh">一組條件，加一段時間。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Data</span><span lang="zh">數據</span></td>
+          <td><span class="verbs" lang="en">tracked, matched, missed by</span><span class="verbs" lang="zh">追蹤到、吻合、誤差為</span></td>
+          <td><span lang="en">A comparison, and the thing you compared against.</span><span lang="zh">一個比較，以及你拿來比的對象。</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout green">
+      <h3><span lang="en">The verb drawer</span><span lang="zh">動詞抽屜</span></h3>
+      <p lang="en">Keep these near you while you write titles: <strong>increased, reduced, restored, rescued, contained, survived, tracked, cut, held, switched on, failed to, did not.</strong> Ten of the twelve are one word. All of them can be checked against a figure.</p>
+      <p lang="zh">寫標題時把這些放在手邊：<strong>上升、下降、恢復、挽救、阻隔、存活、追蹤、縮減、維持、開啟、未能、沒有。</strong>它們都很短，而且每一個都能拿圖來檢驗。</p>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ FIVE TYPES ============ -->
+<section id="types">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">A small toolkit</span><span lang="zh">一組小工具</span></p>
+    <h2><span lang="en">Five title types that work</span><span lang="zh">五種有效的標題</span></h2>
+    <p lang="en">Almost every slide in a ten-minute talk is one of these five. Pick the type first, then write the sentence. It is much faster than staring at an empty title box.</p>
+    <p lang="zh">十分鐘簡報裡的投影片，幾乎每一張都屬於這五種之一。先選類型，再寫句子，比盯著空的標題框快得多。</p>
+
+    <div class="grid grid2" style="margin-top:28px">
+      <div class="card">
+        <span class="lead-n">01</span>
+        <h3><span lang="en">The result claim</span><span lang="zh">結果主張</span></h3>
+        <p lang="en">For every data slide. Subject, verb, readout, and a number if you have one. This is the default and you should have to justify using anything else on a results slide.</p>
+        <p lang="zh">用在每一張數據投影片。主詞、動詞、讀數，有數字就放數字。這是預設選項；在結果投影片上用別的類型，你要說得出理由。</p>
+        <div class="tt">
+          <div class="tt-row tt-from"><div class="tt-k"><span lang="en">Was</span><span lang="zh">原本</span></div><div class="tt-v">Plant Assays - Soil</div></div>
+          <div class="tt-row tt-to"><div class="tt-k"><span lang="en">Now</span><span lang="zh">改成</span></div><div class="tt-v"><span lang="en">Treating at the same time as the heat restored chlorophyll; treating afterwards did not</span><span lang="zh">與熱逆境同時施用可讓葉綠素恢復，事後才施用則無效</span></div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="lead-n">02</span>
+        <h3><span lang="en">The mechanism claim</span><span lang="zh">機制主張</span></h3>
+        <p lang="en">For how-it-works slides. One causal step, stated in the direction the biology actually runs. Check the direction. A title that reverses cause and effect will be corrected by the first judge who notices.</p>
+        <p lang="zh">用在說明原理的投影片。一個因果步驟，而且方向要跟生物學實際運作的方向一致。請檢查方向：寫反因果的標題，第一個發現的評審就會當場糾正你。</p>
+        <div class="tt">
+          <div class="tt-row tt-from"><div class="tt-k"><span lang="en">Was</span><span lang="zh">原本</span></div><div class="tt-v">Intense stress activates light</div></div>
+          <div class="tt-row tt-to"><div class="tt-k"><span lang="en">Now</span><span lang="zh">改成</span></div><div class="tt-v"><span lang="en">The sensor reads the stress and drives the green light brighter</span><span lang="zh">感測器讀到逆境，並把綠光調得更亮</span></div></div>
+        </div>
+        <p class="small" lang="en">Stress does not activate light. The sensor does, and the deck’s circuit slide already says so correctly. Keep the two consistent.</p>
+        <p class="small" lang="zh">逆境本身不會啟動光源，是感測器啟動的；這份簡報的電路圖那張其實已經講對了。兩張要一致。</p>
+      </div>
+
+      <div class="card">
+        <span class="lead-n">03</span>
+        <h3><span lang="en">The question</span><span lang="zh">提問</span></h3>
+        <p lang="en">Legitimate, but only as a setup, and only if the answer is the next thing the audience sees, in big type. A question whose answer is a 13 px panel in the corner of the same slide is a title that creates a problem and then hides the solution.</p>
+        <p lang="zh">這是合法的，但只能當作鋪陳，而且答案必須是觀眾接下來馬上看到的東西，字還要夠大。如果答案是同一張投影片角落那塊 13 px 的小面板，那這個標題就是製造了問題又把答案藏起來。</p>
+        <div class="tt">
+          <div class="tt-row tt-from"><div class="tt-k"><span lang="en">Was</span><span lang="zh">原本</span></div><div class="tt-v">How do we precisely predict the stress?</div></div>
+          <div class="tt-row tt-to"><div class="tt-k"><span lang="en">Now</span><span lang="zh">改成</span></div><div class="tt-v"><span lang="en">Adding weather data cut our rice yield error from 419 to 365 kg/ha</span><span lang="zh">加入氣象資料後，稻作產量預測誤差從 419 降到 365 kg/ha</span></div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="lead-n">04</span>
+        <h3><span lang="en">The stake</span><span lang="zh">代價</span></h3>
+        <p lang="en">For problem slides. Name who loses what. One number, chosen because it is the number the rest of the talk is built on, not because it was the easiest to find.</p>
+        <p lang="zh">用在問題投影片。說清楚誰損失了什麼。放一個數字，而且要選那個「後面整場簡報都建立在它之上」的數字，不是最容易找到的那個。</p>
+        <div class="tt">
+          <div class="tt-row tt-from"><div class="tt-k"><span lang="en">Was</span><span lang="zh">原本</span></div><div class="tt-v">Taiwan Farmland Distribution x Climate Volatility</div></div>
+          <div class="tt-row tt-to"><div class="tt-k"><span lang="en">Now</span><span lang="zh">改成</span></div><div class="tt-v"><span lang="en">85.3% of Taiwan’s farmland is small farms, and they sit under the most volatile weather</span><span lang="zh">台灣 85.3% 的農地屬於小農，而它們正好位在天氣最不穩定的區域</span></div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="lead-n">05</span>
+        <h3><span lang="en">The promise</span><span lang="zh">願景</span></h3>
+        <p lang="en">Opening and closing slides only, used twice at most. It is the one place where a title is allowed to be short, memorable and unfalsifiable, because its job is to be repeated rather than to be checked.</p>
+        <p lang="zh">只用在開場和結尾，最多兩次。這是唯一允許標題短、好記、而且無法被否證的地方，因為它的任務是被複述，不是被檢驗。</p>
+        <div class="tt">
+          <div class="tt-row tt-to"><div class="tt-k"><span lang="en">Keep</span><span lang="zh">保留</span></div><div class="tt-v"><span lang="en">Every farmer a biomanufacturer</span><span lang="zh">讓每一位農民都成為生物製造者</span></div></div>
+        </div>
+        <p class="small" lang="en">This one already works. Five words, a concrete image, and it survives being the first and the last thing the room hears. Do not rewrite it.</p>
+        <p class="small" lang="zh">這句本來就很好：很短、有具體畫面，而且當全場聽到的第一句和最後一句都成立。不要改它。</p>
+      </div>
+
+      <div class="card plain">
+        <span class="lead-n">00</span>
+        <h3><span lang="en">And one to avoid</span><span lang="zh">還有一種要避開</span></h3>
+        <p lang="en">The judging-criterion title. “Biosafety”, “Entrepreneurship”, “Human Practices”, “Contribution”. These are the names of the boxes you will be scored in, and writing them on a slide does not earn the box. A judge gives you the biosafety mark for the plate that showed no growth, not for the word.</p>
+        <p lang="zh">評審項目式標題：「Biosafety」「Entrepreneurship」「Human Practices」「Contribution」。這些是你會被評分的項目名稱，把它寫在投影片上並不會讓你拿到那個項目的分數。評審給你生物安全的分數，是因為那盤沒有長菌的培養皿，不是因為那個詞。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ TESTS ============ -->
+<section id="tests">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">Six questions</span><span lang="zh">六個問題</span></p>
+    <h2><span lang="en">The title tests</span><span lang="zh">標題的檢查</span></h2>
+    <p lang="en">Run these on every title in the deck. They take about ten seconds each, and a title that fails two of them is costing you a slide.</p>
+    <p lang="zh">把這六題套用在簡報裡的每個標題上，每題大約十秒。一個標題如果有兩題不過，那張投影片就白白浪費了。</p>
+
+    <ul class="ticks">
+      <li lang="en"><strong>Can it be false?</strong> If no observation could contradict your title, it is decoration. “Our protectants work” cannot be false. “ACCD restored chlorophyll to near the unstressed level” can.</li>
+      <li lang="zh"><strong>它有可能是錯的嗎？</strong>如果沒有任何觀察結果能推翻你的標題，那它只是裝飾。「我們的保護蛋白有效」不可能錯；「ACCD 讓葉綠素含量回到接近無逆境的水準」就可能錯。</li>
+
+      <li lang="en"><strong>Does it survive with the slide hidden?</strong> Read the title alone to someone who has not seen the figure. If they still learn something true, the title is doing its job.</li>
+      <li lang="zh"><strong>把圖遮起來，它還站得住嗎？</strong>只把標題唸給沒看過圖的人聽。如果他們仍然學到一件真實的事，這個標題就有盡到責任。</li>
+
+      <li lang="en"><strong>Does a non-specialist get the verb?</strong> They do not need to know what BoPEP4 is. They do need to know that something went up, came back, or was kept in.</li>
+      <li lang="zh"><strong>非專業的人看得懂那個動詞嗎？</strong>他們不需要知道 BoPEP4 是什麼，但一定要知道有東西上升了、回復了，或是被留住了。</li>
+
+      <li lang="en"><strong>Is it under about twelve words, and no more than two lines?</strong> Two lines is the hard ceiling at stage sizes. Beyond that the audience is reading instead of listening to you.</li>
+      <li lang="zh"><strong>有沒有控制在十二個字左右、最多兩行？</strong>以台上的字級來說，兩行就是上限。再多，觀眾就是在讀字，而不是在聽你講。</li>
+
+      <li lang="en"><strong>Does it say something the next slide does not?</strong> Two slides with interchangeable titles are one slide with a page break in it.</li>
+      <li lang="zh"><strong>它說的事情，下一張沒說嗎？</strong>兩張標題可以互換的投影片，其實是一張中間多了個分頁。</li>
+
+      <li lang="en"><strong>Does every number in it match the script, the wiki and the poster?</strong> The title is the most quoted line on the slide, so it is also the most expensive place to be inconsistent.</li>
+      <li lang="zh"><strong>標題裡的每個數字，和講稿、wiki、海報都一致嗎？</strong>標題是投影片上最常被引用的一行，所以也是最不能前後不一的地方。</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ QUIZ ============ -->
+<section id="check">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">Try it yourself</span><span lang="zh">自己試試看</span></p>
+    <h2><span lang="en">Three slides, three titles</span><span lang="zh">三張投影片，三個標題</span></h2>
+    <p lang="en">Each of these is a real slide from the same ten-minute talk. Decide what the message is before you look at the options.</p>
+    <p lang="zh">以下三張都是同一場十分鐘簡報裡的真實投影片。先自己決定它想說什麼，再看選項。</p>
+
+    <!-- Q1 -->
+    <div class="quiz">
+      <div class="quiz-body">
+        <figure class="slide">
+          <img src="assets/slides/s29.webp" alt="A slide titled Plant Assays - Agar showing three pairs of plate photographs and three bar charts inside a red rectangle, with a large green arrow labelled plus 53 percent." loading="lazy">
+          <figcaption>
+            <span lang="en">Three independent experiments, three bar charts, one red box, one clip-art arrow.</span>
+            <span lang="zh">三個互相獨立的實驗、三張長條圖、一個紅框、一支美工圖箭頭。</span>
+          </figcaption>
+        </figure>
+        <h3 style="margin-top:22px"><span lang="en">What should this slide’s title be?</span><span lang="zh">這張投影片的標題該怎麼寫？</span></h3>
+
+        <button class="opt" type="button">
+          <span lang="en">Plant Assays - Agar</span><span lang="zh">Plant Assays - Agar</span>
+          <span class="why" lang="en">This is the real title, and it is a topic label. It names the cultivation system and stops there, so the audience has to reverse-engineer three experiments in about thirty seconds.</span>
+          <span class="why" lang="zh">這是原本的標題，也是一個主題標籤。它只說出栽培系統就停住了，於是觀眾必須在三十秒內自己反推三個實驗。</span>
+        </button>
+
+        <button class="opt" type="button" data-correct="1">
+          <span lang="en">ACCD restored chlorophyll in heat-stressed <em>Arabidopsis</em> on agar</span><span lang="zh">在洋菜培養系統中，ACCD 讓熱逆境下的 <em>Arabidopsis</em> 恢復葉綠素含量</span>
+          <span class="why" lang="en">Subject, verb, readout, condition, and it is checkable against the left-hand plates and the first bar chart. It also exposes the real problem: this title only covers one third of the slide, which is the evidence that the slide should be split into three.</span>
+          <span class="why" lang="zh">主詞、動詞、讀數、條件都有，而且可以拿左邊的培養皿和第一張長條圖來檢驗。它同時也暴露了真正的問題：這個標題只涵蓋了投影片的三分之一，正好證明這張應該拆成三張。</span>
+        </button>
+
+        <button class="opt" type="button">
+          <span lang="en">Our protectants protect plants from stress</span><span lang="zh">我們的保護蛋白能保護植物對抗逆境</span>
+          <span class="why" lang="en">Nothing on the slide could make this false, which is how you know it is not a result. It also claims far more than three agar plates can support: no soil, no field, no dose, no n.</span>
+          <span class="why" lang="zh">投影片上沒有任何東西能推翻這句話，這就是它不算結果的證據。它宣稱的東西也遠超過三盤洋菜培養皿能支持的範圍：沒有土壤、沒有田間、沒有劑量、沒有 n。</span>
+        </button>
+
+        <button class="opt" type="button">
+          <span lang="en">Three protectants were tested in <em>Arabidopsis</em> under heat and salt stress</span><span lang="zh">我們在 <em>Arabidopsis</em> 上以熱逆境與鹽逆境測試了三種保護蛋白</span>
+          <span class="why" lang="en">True, and still not the message. It describes the method, so the audience learns what you did and not what happened. Methods belong in the body of the slide or in the backup deck.</span>
+          <span class="why" lang="zh">這是真的，但仍然不是訊息。它描述的是方法，觀眾只知道你做了什麼，不知道結果是什麼。方法應該放在投影片內文或備用投影片裡。</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="quiz">
+      <div class="quiz-body">
+        <figure class="slide">
+          <img src="assets/slides/s33.webp" alt="A slide titled How do we precisely predict the stress, with a yield time-series chart, a Taiwan silhouette, a small green panel showing prediction errors of 419 and 365, and a cut-out photo of a presenter." loading="lazy">
+          <figcaption>
+            <span lang="en">The answer to the title’s question is the small green panel at the bottom left.</span>
+            <span lang="zh">標題這個問句的答案，就在左下角那塊小小的綠色面板裡。</span>
+          </figcaption>
+        </figure>
+        <h3 style="margin-top:22px"><span lang="en">What should this slide’s title be?</span><span lang="zh">這張投影片的標題該怎麼寫？</span></h3>
+
+        <button class="opt" type="button">
+          <span lang="en">How do we precisely predict the stress?</span><span lang="zh">How do we precisely predict the stress?</span>
+          <span class="why" lang="en">The real title, and a question is allowed. The rule is that the answer must be the next thing the audience sees, in large type. Here it is a panel in the bottom-left corner at about 13 px, next to a decorative map and a cut-out photo. The question is promised and then buried.</span>
+          <span class="why" lang="zh">這是原本的標題，而問句是允許的。規則是：答案必須是觀眾接下來馬上看到的東西，而且字要大。但這裡的答案是左下角約 13 px 的小面板，旁邊還有一張裝飾用的地圖和一張去背人像。問題丟出來了，答案卻被埋掉。</span>
+        </button>
+
+        <button class="opt" type="button" data-correct="1">
+          <span lang="en">Adding weather data cut our rice yield error from 419 to 365 kg/ha</span><span lang="zh">加入氣象資料後，稻作產量預測誤差從 419 降到 365 kg/ha</span>
+          <span class="why" lang="en">Eleven words, two numbers, one comparison, and a named baseline (the trend-only model). It is the strongest sentence anywhere in the talk because a judge can argue with it. Make those two numbers the largest thing on the slide and the time-series becomes supporting evidence instead of the main event.</span>
+          <span class="why" lang="zh">十一個字、兩個數字、一個比較，還有一個講明的基準（只看趨勢的模型）。這是整場簡報裡最強的一句話，因為評審可以跟它辯論。把這兩個數字放大成投影片上最大的東西，時間序列圖就會退成佐證，而不是主角。</span>
+        </button>
+
+        <button class="opt" type="button">
+          <span lang="en">Our model predicts crop stress accurately</span><span lang="zh">我們的模型能準確預測作物逆境</span>
+          <span class="why" lang="en">“Accurately” compared with what? An error of 365 kg/ha is only meaningful next to the 419 it replaced. A title that drops the comparison throws away the result and sounds like a sales line.</span>
+          <span class="why" lang="zh">「準確」是跟誰比？365 kg/ha 的誤差，只有擺在它取代的 419 旁邊才有意義。拿掉比較基準的標題等於丟掉了結果，聽起來也像在推銷。</span>
+        </button>
+
+        <button class="opt" type="button">
+          <span lang="en">25 years of weather and harvest data from 16 counties</span><span lang="zh">涵蓋 16 個縣市、25 年的氣象與收穫資料</span>
+          <span class="why" lang="en">True, specific, and about the input rather than the finding. Effort is not a result. Say this in one spoken sentence while the audience reads the claim in the title.</span>
+          <span class="why" lang="zh">這是真的，也很具體，但說的是輸入資料而不是發現。投入的功夫不等於結果。這句用嘴巴講一次就好，讓觀眾同時在標題上讀到主張。</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="quiz">
+      <div class="quiz-body">
+        <figure class="slide">
+          <img src="assets/slides/s35.webp" alt="A slide titled Biosafety, showing two sample tubes, a schematic of the lumen and shell sides of a membrane with colonies on one side and a clear plate on the other, and a green tick reading Result: successful containment of bacteria." loading="lazy">
+          <figcaption>
+            <span lang="en">Among the best built slides in the deck. The conclusion is printed at the bottom, where it is read last.</span>
+            <span lang="zh">這是整份簡報裡做得最好的幾張之一。只是結論被印在最下方，也就是最後才被讀到的位置。</span>
+          </figcaption>
+        </figure>
+        <h3 style="margin-top:22px"><span lang="en">What should this slide’s title be?</span><span lang="zh">這張投影片的標題該怎麼寫？</span></h3>
+
+        <button class="opt" type="button">
+          <span lang="en">Biosafety</span><span lang="zh">Biosafety</span>
+          <span class="why" lang="en">The real title. It names a judging criterion, not a finding, and the finding is already written on the slide in the green tick at the bottom. Move that sentence to the top and the slide needs nothing else.</span>
+          <span class="why" lang="zh">這是原本的標題。它說的是評審項目，不是發現，而發現其實已經寫在下方那個綠色勾勾旁邊了。把那句話搬到最上面，這張投影片就不需要其他東西了。</span>
+        </button>
+
+        <button class="opt" type="button" data-correct="1">
+          <span lang="en">No <em>B. subtilis</em> grew from the outer side of the membrane</span><span lang="zh">膜外側取樣的培養基上沒有長出任何 <em>B. subtilis</em></span>
+          <span class="why" lang="en">A negative result stated as a positive claim, and it maps exactly onto what the audience sees: colonies on one plate, a clear plate on the other. Add the condition you tested under, out loud, so nobody mistakes one experiment for a guarantee.</span>
+          <span class="why" lang="zh">用肯定的方式陳述一個陰性結果，而且和觀眾看到的畫面完全對得上：一盤長菌、一盤乾淨。記得口頭補上測試條件，免得有人把單一實驗當成保證。</span>
+        </button>
+
+        <button class="opt" type="button">
+          <span lang="en">Our bioreactor is completely safe</span><span lang="zh">我們的生物反應器完全安全</span>
+          <span class="why" lang="en">One plate pair under one set of conditions does not license the word “completely”, and a safety judge will take that word apart in the Q&amp;A. Claim what you tested. The honest version is stronger because it holds up.</span>
+          <span class="why" lang="zh">單一條件下的一組培養皿，不足以支撐「完全」這兩個字，而生物安全的評審會在問答時把它拆開來問。你測了什麼就主張什麼。誠實的版本比較強，因為它撐得住。</span>
+        </button>
+
+        <button class="opt" type="button">
+          <span lang="en">We cultured samples from both sides of the membrane</span><span lang="zh">我們從膜的兩側取樣並進行培養</span>
+          <span class="why" lang="en">This is the method, and it is already printed on the slide as a subtitle. Saying it twice costs you the one line of large type that could have carried the answer.</span>
+          <span class="why" lang="zh">這是方法，而且投影片上已經用副標寫過一次了。講兩次，等於浪費掉那唯一一行可以承載答案的大字。</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ DESIGNING THE SLIDE ============ -->
+<section id="design">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">The second half of the job</span><span lang="zh">工作的後半段</span></p>
+    <h2><span lang="en">Designing the slide under the title</span><span lang="zh">設計標題下面的投影片</span></h2>
+    <p class="lede" lang="en">A good title changes what the rest of the slide is for. It stops being a summary of the experiment and becomes the evidence for one sentence. That makes almost every design decision easier, because now you can ask of any element: does this help prove the title, or is it just here?</p>
+    <p class="lede" lang="zh">好的標題會改變投影片其餘部分的功能。它不再是實驗的摘要，而變成某一句話的證據。這讓幾乎所有設計決定都變簡單，因為你現在可以對任何元素問一句：它有幫忙證明標題嗎，還是只是剛好在那裡？</p>
+  </div>
+
+  <div class="wrap wide">
+
+    <!-- D1 -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-num">D1</span>
+        <h3><span lang="en">One slide, one claim</span><span lang="zh">一張投影片，一個主張</span></h3>
+      </div>
+      <div class="entry-grid">
+        <div>
+          <p lang="en">If you cannot write the title without an “and” joining two different results, you have two slides. This is the single most reliable test in the whole page, because the word appears before you have had time to rationalise.</p>
+          <p lang="zh">如果你沒辦法在不用「以及」串起兩個不同結果的情況下寫出標題，那就是兩張投影片。這是整頁裡最可靠的一個檢查，因為那個字會在你來得及替自己找理由之前就出現。</p>
+          <p lang="en">The agar slide carries three independent experiments: ACCD under heat, LEA14 under 100 mM NaCl, BoPEP4 under 100 mM NaCl. Three subjects, two stresses, three charts. At twenty-eight seconds a slide, the audience gets roughly nine seconds per experiment, which is not enough to read one axis label.</p>
+          <p lang="zh">那張洋菜投影片裝了三個互相獨立的實驗：熱逆境下的 ACCD、100 mM NaCl 下的 LEA14、100 mM NaCl 下的 BoPEP4。三個主詞、兩種逆境、三張圖。以一張二十八秒計，每個實驗大約只有九秒，連一個座標軸標示都讀不完。</p>
+          <p lang="en">Splitting it costs you two slide numbers and buys you three readable claims. If you only have time for one, keep the ACCD heat result, because it is the only one with a number in the script, and move the other two to the wiki.</p>
+          <p lang="zh">拆開來只多花兩個頁碼，換來三個讀得懂的主張。如果時間只夠講一個，留下 ACCD 的熱逆境結果，因為只有它在講稿裡有數字；另外兩個搬到 wiki 上。</p>
+        </div>
+        <figure class="slide">
+          <img src="assets/slides/s29.webp" alt="The agar assay slide, carrying three separate experiments side by side." loading="lazy">
+          <figcaption>
+            <span lang="en">Three experiments, one title, twenty-eight seconds.</span>
+            <span lang="zh">三個實驗、一個標題、二十八秒。</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- D2 -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-num">D2</span>
+        <h3><span lang="en">The title is the conclusion, so the figure only has to support it</span><span lang="zh">標題就是結論，圖只要支持它就好</span></h3>
+      </div>
+      <div class="entry-grid">
+        <div>
+          <p lang="en">This layout has a name: assertion and evidence. The assertion is a full sentence across the top. Under it sits one piece of evidence, as large as the space allows. Nothing else is on the slide.</p>
+          <p lang="zh">這種版面有個名字：主張加證據。主張是橫跨頂端的一個完整句子，下面放一份證據，能放多大就放多大，投影片上再沒有別的東西。</p>
+          <p lang="en">The biosafety slide is two edits away from being the best slide in the deck. Move the sentence at the bottom up into the title position. Then look at what is left and ask what it is proving. The tube photograph on the left shows two tubes that look identical, which proves nothing. The schematic on the right explains the mechanism, which the previous slide already did. The plates are the evidence. Make them the slide.</p>
+          <p lang="zh">那張生物安全投影片，只要改兩個地方就會是整份簡報最好的一張。先把下方那句話搬到標題位置，然後看看剩下什麼、它在證明什麼。左邊的離心管照片拍的是兩支看起來一模一樣的管子，什麼都證明不了；右邊的示意圖解釋機制，但上一張已經講過了。真正的證據是那兩盤培養皿，就讓它們成為整張投影片。</p>
+          <p lang="en">A useful habit: after you finish a slide, delete one element and see whether the title is still proven. If it is, leave it deleted.</p>
+          <p lang="zh">一個好習慣：做完一張投影片後，刪掉一個元素，看看標題是否仍然被證明。如果仍然成立，那就讓它一直被刪著。</p>
+        </div>
+        <figure class="slide">
+          <img src="assets/slides/s35.webp" alt="The biosafety slide, with the conclusion printed in a tick box at the bottom of the slide." loading="lazy">
+          <figcaption>
+            <span lang="en">The conclusion is already written. It is just in the last place the eye reaches.</span>
+            <span lang="zh">結論其實已經寫好了，只是放在視線最後才會到的位置。</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- D3 -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-num">D3</span>
+        <h3><span lang="en">Readability at stage distance</span><span lang="zh">台上距離下的可讀性</span></h3>
+      </div>
+      <p lang="en">Here is the arithmetic, because most slide advice skips it. A 16:9 deck has a canvas 960 × 540 pt. A line of 20 pt text is therefore 3.7% of the slide height. Project that onto a screen two metres high and the text is about 7 cm tall. From the back row of a hall, fifteen to twenty metres away, 7 cm of text subtends roughly the angle that a newspaper headline does across a large room: readable with effort, not readable while also listening to you.</p>
+    <p lang="zh">先把算術做出來，因為大部分的投影片建議都跳過這一段。16:9 的版面是 960 × 540 pt，所以一行 20 pt 的字只占版面高度的 3.7%。投影到兩公尺高的布幕上，那行字大約 7 公分高。在十五到二十公尺外的後排看 7 公分的字，大概就像在大房間裡看報紙標題：很努力可以讀，但沒辦法一邊讀一邊聽你講話。</p>
+    <p lang="en">So the working minimum is 24 pt for anything you want read, and 28 pt if it matters. Now measure the deck. The exported renders are 1,100 px wide for a 960 pt canvas, so one pixel is about 0.9 pt.</p>
+    <p lang="zh">所以實務上的下限是：想被讀到的東西至少 24 pt，重要的東西 28 pt。現在來量這份簡報。輸出的圖檔寬 1,100 px，對應 960 pt 的版面，所以 1 px 約等於 0.9 pt。</p>
+
+    <table class="t">
+      <thead>
+        <tr>
+          <th><span lang="en">Slide</span><span lang="zh">投影片</span></th>
+          <th><span lang="en">Text you need to read</span><span lang="zh">需要被讀到的文字</span></th>
+          <th><span lang="en">Size on the canvas</span><span lang="zh">在版面上的字級</span></th>
+          <th><span lang="en">Verdict</span><span lang="zh">結論</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mono">s33</td>
+          <td><span lang="en">Chart axes, tick labels, four-series legend</span><span lang="zh">座標軸、刻度標示、四組序列的圖例</span></td>
+          <td><span lang="en">about 6 pt</span><span lang="zh">約 6 pt</span></td>
+          <td><span class="chip cut"><span lang="en">Front row only</span><span lang="zh">只有第一排看得到</span></span></td>
+        </tr>
+        <tr>
+          <td class="mono">s17</td>
+          <td><span lang="en">BioRender module and protein labels</span><span lang="zh">BioRender 模組與蛋白標示</span></td>
+          <td><span lang="en">about 8 pt</span><span lang="zh">約 8 pt</span></td>
+          <td><span class="chip cut"><span lang="en">Unreadable</span><span lang="zh">讀不到</span></span></td>
+        </tr>
+        <tr>
+          <td class="mono">s07</td>
+          <td><span lang="en">Seven pipeline step captions</span><span lang="zh">流程七個步驟的說明</span></td>
+          <td><span lang="en">about 10 pt</span><span lang="zh">約 10 pt</span></td>
+          <td><span class="chip cut"><span lang="en">Unreadable</span><span lang="zh">讀不到</span></span></td>
+        </tr>
+        <tr>
+          <td class="mono">s32</td>
+          <td><span lang="en">Four feature cards, three lines each</span><span lang="zh">四張特色卡，每張三行</span></td>
+          <td><span lang="en">about 11 pt</span><span lang="zh">約 11 pt</span></td>
+          <td><span class="chip fix"><span lang="en">Borderline, and four at once</span><span lang="zh">勉強，而且一次四張</span></span></td>
+        </tr>
+        <tr>
+          <td class="mono">s36</td>
+          <td><span lang="en">Product descriptions</span><span lang="zh">產品說明</span></td>
+          <td><span lang="en">about 12 pt</span><span lang="zh">約 12 pt</span></td>
+          <td><span class="chip fix"><span lang="en">Borderline</span><span lang="zh">勉強</span></span></td>
+        </tr>
+        <tr>
+          <td class="mono">s35</td>
+          <td><span lang="en">“Result: successful containment of bacteria”</span><span lang="zh">「Result: successful containment of bacteria」</span></td>
+          <td><span lang="en">about 17 pt</span><span lang="zh">約 17 pt</span></td>
+          <td><span class="chip fix"><span lang="en">Should be the biggest line on the slide</span><span lang="zh">這應該是整張最大的一行</span></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p lang="en">Three rules follow from the table, and none of them is “make the font bigger”, because shrinking a figure to fit and then enlarging its text is how figures end up unreadable in the first place.</p>
+    <p lang="zh">從這張表可以得出三條規則，而且沒有一條是「把字放大」，因為「先把圖縮小塞進去、再把字放大」正是圖變得讀不到的起點。</p>
+    <ul class="ticks">
+      <li lang="en"><strong>Rebuild the figure at slide scale, do not shrink it.</strong> A BioRender export at its default label size is drawn for a journal page held at forty centimetres. Re-export it at the size it will occupy, or redraw the three parts you will actually point at.</li>
+      <li lang="zh"><strong>用投影片的尺度重做圖，不要把圖縮小。</strong>BioRender 預設標示大小是為了四十公分外手持的期刊頁面而設計的。請用它在投影片上實際占的尺寸重新輸出，或是把你真正會指的那三個部分重畫一遍。</li>
+      <li lang="en"><strong>Delete every label you will not say out loud.</strong> On the circuit slide, the speaker names four things. The figure labels about twenty. The other sixteen are not context, they are noise competing with the four.</li>
+      <li lang="zh"><strong>刪掉每一個你不會唸出來的標示。</strong>在電路圖那張，講者只提到四樣東西，圖上卻標了大約二十個。多出來的十六個不是脈絡，而是跟那四個搶注意力的雜訊。</li>
+      <li lang="en"><strong>Make the one number you want remembered the largest thing on the slide.</strong> On the prediction slide that is 419 and 365. They are currently among the smallest numbers on it.</li>
+      <li lang="zh"><strong>讓你最希望被記住的那個數字成為整張最大的東西。</strong>在預測那張，那就是 419 和 365，而它們目前是整張上面最小的幾個數字之一。</li>
+    </ul>
+
+    <div class="figrow">
+      <figure class="slide">
+        <img src="assets/slides/s33.webp" alt="The prediction slide, whose time-series chart has axis text at roughly six points." loading="lazy">
+        <figcaption>
+          <span lang="en">The two numbers that win the argument, 419 and 365, are smaller than the decorative map beside them.</span>
+          <span lang="zh">真正決勝負的兩個數字 419 和 365，比旁邊那張裝飾用的地圖還小。</span>
+        </figcaption>
+      </figure>
+      <figure class="slide">
+        <img src="assets/slides/s17.webp" alt="The gene circuit slide, a dense four-module BioRender diagram with small internal labels and a red box around one module." loading="lazy">
+        <figcaption>
+          <span lang="en">The best title in the deck, sitting on a figure built for a printed page.</span>
+          <span lang="zh">整份簡報最好的標題，卻配上一張為印刷頁面而畫的圖。</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+    <!-- D4 -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-num">D4</span>
+        <h3><span lang="en">Plate and gel photographs</span><span lang="zh">培養皿與膠體照片</span></h3>
+      </div>
+      <div class="entry-grid">
+        <div>
+          <p lang="en">A photograph of a plate is a measurement, and it has to be treated like one. Five things, every time:</p>
+          <p lang="zh">培養皿照片是一種測量，就要當測量來對待。每次都要有這五件事：</p>
+          <ul class="ticks">
+            <li lang="en"><strong>A scale bar.</strong> The agar seedling photos show root length differences, and the script quotes 5.8 mm, but there is nothing in the image that lets anyone verify a millimetre.</li>
+            <li lang="zh"><strong>比例尺。</strong>洋菜上的幼苗照片要呈現根長差異，講稿也報了 5.8 mm，但畫面裡沒有任何東西能讓人驗證一毫米有多長。</li>
+            <li lang="en"><strong>The same crop and the same magnification in both panels.</strong> Any difference in framing reads as a difference in the biology.</li>
+            <li lang="zh"><strong>兩張圖用同樣的裁切與同樣的倍率。</strong>構圖上的任何差異，都會被當成生物學上的差異。</li>
+            <li lang="en"><strong>The same lighting and background.</strong> Chlorophyll is a colour claim. A warmer lamp on one plate is an argument you did not mean to make.</li>
+            <li lang="zh"><strong>同樣的光源與背景。</strong>葉綠素是關於顏色的主張；其中一盤打了偏暖的燈，等於你做了一個自己沒想過的論證。</li>
+            <li lang="en"><strong>Label each panel with the condition, not just with or without.</strong> “Without ACCD” and “With ACCD” are fine side by side, but the temperature or the salt concentration has to be on the panel too, because somebody walked in during this slide.</li>
+            <li lang="zh"><strong>每張圖都標上條件，不要只寫有或沒有。</strong>「Without ACCD」和「With ACCD」並排是可以的，但溫度或鹽濃度也必須標在圖上，因為有人正好是在這張投影片時走進來的。</li>
+            <li lang="en"><strong>Say n.</strong> How many plates, how many seedlings, how many independent repeats. One line of small text, and it answers the first question a judge would have asked.</li>
+            <li lang="zh"><strong>寫出 n。</strong>幾盤、幾株、做了幾次獨立重複。一行小字，就回答掉評審原本要問的第一個問題。</li>
+          </ul>
+          <p lang="en">The soil slide gets most of this right. The four-pot heat panel is genuinely good evidence: same pots, same framing, same light, conditions labelled across the top, and the difference is visible from the back of the room without reading anything.</p>
+          <p lang="zh">土壤那張大部分都做對了。四盆的熱逆境那組是真正好的證據：同樣的盆、同樣的構圖、同樣的光，條件標在上緣，而且從後排看也能看出差異，完全不需要讀字。</p>
+        </div>
+        <div class="stack">
+          <figure class="slide">
+            <img src="assets/slides/s31.webp" alt="The soil assay slide, with a four-pot heat stress panel labelled across the top and two bar charts below." loading="lazy">
+            <figcaption>
+              <span lang="en">The four-pot panel works. Same pots, same framing, conditions labelled, difference visible without reading.</span>
+              <span lang="zh">四盆那組是成功的：同樣的盆、同樣的構圖、條件有標，不用讀字就看得出差異。</span>
+            </figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/slides/s29.webp" alt="The agar assay slide, with paired plate photographs that carry no scale bar." loading="lazy">
+            <figcaption>
+              <span lang="en">Paired plates, no scale bar, no n, and a root-length claim that depends on both.</span>
+              <span lang="zh">成對的培養皿，沒有比例尺、沒有 n，而根長的主張正好同時仰賴這兩樣。</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- D5 -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-num">D5</span>
+        <h3><span lang="en">Bar charts for biological data</span><span lang="zh">生物數據的長條圖</span></h3>
+      </div>
+      <div class="entry-grid">
+        <div>
+          <p lang="en">A bar chart of two means with no n and no statistics is a picture, not a result. That is not a style opinion, it is what the chart is able to support. A ten-minute talk is exactly where a judge notices, because they have nothing to do for twenty-eight seconds except look at your axes.</p>
+          <p lang="zh">兩根平均值、沒有 n、沒有統計的長條圖，是一張圖片，不是一個結果。這不是風格意見，而是那張圖能支持到什麼程度的事實。十分鐘簡報正是評審會注意到的場合，因為那二十八秒裡他們沒別的事可做，只能盯著你的座標軸。</p>
+          <p lang="en">What a bar has to carry:</p>
+          <p lang="zh">一根長條必須帶著這些資訊：</p>
+          <ul class="ticks">
+            <li lang="en"><strong>An axis with units.</strong> And the same units across the whole deck. This deck plots <span class="mono">Chlorophyll a + b (mg/L)</span> on the agar and soil slides and <span class="mono">relative chlorophyll content (/plant amount)</span> on hydroponics. Those are two different quantities, so the audience cannot compare three systems that the talk explicitly asks them to compare.</li>
+            <li lang="zh"><strong>有單位的座標軸</strong>，而且整份簡報都要用同一種單位。這份簡報在洋菜和土壤那兩張畫的是 <span class="mono">Chlorophyll a + b (mg/L)</span>，水耕那張畫的卻是 <span class="mono">relative chlorophyll content (/plant amount)</span>。這是兩個不同的量，於是觀眾沒辦法比較那三個系統，而簡報卻明確要求他們去比較。</li>
+            <li lang="en"><strong>n, on the chart.</strong> Not in the speech, where it evaporates.</li>
+            <li lang="zh"><strong>n 要寫在圖上</strong>，不要只用講的，講過就消失了。</li>
+            <li lang="en"><strong>Error bars, and a caption saying what they are.</strong> SD and SEM look identical and mean different things, and SEM with n = 3 is a thin bar hiding a wide spread. On the agar slide two charts have error bars and the third appears not to, which an attentive judge reads as a missing repeat.</li>
+            <li lang="zh"><strong>誤差線，並註明它代表什麼。</strong>SD 和 SEM 長得一模一樣，意義卻不同；n = 3 的 SEM 是一根細細的線，底下藏著很大的離散。洋菜那張有兩張圖有誤差線，第三張看起來沒有，細心的評審會把它讀成少做了一次重複。</li>
+            <li lang="en"><strong>The control next to the treatment.</strong> Adjacent, same axis, same scale. Never on a second chart.</li>
+            <li lang="zh"><strong>對照組要緊鄰處理組。</strong>並排、同一條軸、同一個刻度，絕對不要放到另一張圖上。</li>
+            <li lang="en"><strong>Filled bars, not outlines.</strong> The hydroponics charts use hollow bars keyed by a green and an olive outline. At stage distance those two colours are one colour, so the legend stops working and the chart becomes four unlabelled bars.</li>
+            <li lang="zh"><strong>用實心長條，不要只有外框。</strong>水耕那兩張圖用的是空心長條，靠綠色和橄欖綠的外框來區分。在台上的距離，那兩個顏色就是同一個顏色，圖例失效，整張圖變成四根沒有標示的長條。</li>
+          </ul>
+          <p lang="en">One more thing, and it is the hardest. If a chart contains a result you cannot explain, say so on the slide. In the lower hydroponics chart, ACCD at 0 mM NaCl sits around 0.83, below the plasmid-free control at 1.0, while ACCD at 100 mM NaCl reaches about 2.2. The talk never mentions the dip. A judge who spots it and hears nothing concludes you did not look. A judge who hears “we do not yet know why the unstressed ACCD line sits below control” concludes you did.</p>
+          <p lang="zh">還有一件最難的。如果圖裡有一個你解釋不了的結果，就在投影片上講出來。水耕下面那張圖裡，0 mM NaCl 的 ACCD 大約在 0.83，低於無質體對照組的 1.0，而 100 mM NaCl 的 ACCD 卻到了大約 2.2。整場簡報從沒提過這個下降。評審看見了卻什麼也沒聽到，會認定你根本沒看；聽到你說「無逆境下 ACCD 低於對照組，我們還不知道原因」，則會認定你看了。</p>
+        </div>
+        <figure class="slide">
+          <img src="assets/slides/s30.webp" alt="The hydroponics slide, with two outline bar charts whose legends are keyed by two similar green colours." loading="lazy">
+          <figcaption>
+            <span lang="en">Outline bars, two near-identical greens in the legend, a changed y-axis unit, and an unexplained dip below control.</span>
+            <span lang="zh">空心長條、圖例裡兩個幾乎分不出來的綠色、換掉的 y 軸單位，還有一個低於對照組而未被解釋的下降。</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- D6 -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-num">D6</span>
+        <h3><span lang="en">Colour and emphasis</span><span lang="zh">顏色與強調</span></h3>
+      </div>
+      <p lang="en">Pick one accent colour and let it mean exactly one thing for the whole deck. Treatment, or the new result, or the thing you are pointing at. Once a colour means two things, it means nothing, and the audience stops using it to navigate.</p>
+      <p lang="zh">選一個重點色，讓它在整份簡報裡只代表一件事：處理組，或是新結果，或是你正在指的東西。一旦一個顏色代表兩件事，它就什麼也不代表了，觀眾也不再用它來辨位。</p>
+      <p lang="en">Then be careful about the two habits that undo good data. The first is the red rectangle drawn around a region of a slide. It reads as an error mark, or as a crop line, and it fences off the charts from the photographs they belong to. The second is the clip-art arrow. On the agar slide a large green arrow carries “+53%” across the first chart, overlapping the bars it is describing. That arrow is the brightest, largest object on a slide full of real measurements, and it is the only object on it that is not data.</p>
+      <p lang="zh">接著要小心兩個會毀掉好數據的習慣。第一個是在投影片的某個區域畫紅色方框：它看起來像錯誤標記或裁切線，還會把長條圖和它所屬的照片隔開。第二個是美工圖箭頭。洋菜那張上，一支大大的綠色箭頭把「+53%」橫過第一張圖，還蓋住了它要描述的長條。在一張滿是真實測量值的投影片上，那支箭頭是最亮、最大的物件，也是唯一一個不是數據的物件。</p>
+      <p lang="en">Emphasis should come from size and position, which cost nothing and cannot be misread. Make the treated bar taller in the frame by cropping the axis sensibly, put the number you care about in the title, and leave white space around it. If you genuinely need to point at one thing, a thin line in the accent colour does it without covering the evidence.</p>
+      <p lang="zh">強調應該來自大小與位置：它們不花成本，也不會被誤讀。合理裁切座標軸，讓處理組那根在畫面裡更高；把你在意的數字寫進標題；周圍留白。如果你真的需要指出某樣東西，用重點色的一條細線就夠了，而且不會蓋住證據。</p>
+      <div class="callout amber">
+        <p lang="en">A quick test: cover the arrows, boxes and icons with your hand. If the slide gets easier to read, those elements were not helping.</p>
+        <p lang="zh">一個快速測試：用手把箭頭、方框和圖示遮住。如果投影片變得更好讀，那些元素本來就沒在幫忙。</p>
+      </div>
+    </div>
+
+    <!-- D7 -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-num">D7</span>
+        <h3><span lang="en">Honest numbers</span><span lang="zh">誠實的數字</span></h3>
+      </div>
+      <p lang="en">Round once, early, and then use the same number everywhere: slide, script, wiki, poster, abstract. Write it down in one place that everyone on the team edits, and change it there.</p>
+      <p lang="zh">只四捨五入一次，而且要早，然後在所有地方用同一個數字：投影片、講稿、wiki、海報、摘要。把它寫在一個全隊都能編輯的地方，要改就在那裡改。</p>
+      <p lang="en">This deck shows what happens otherwise. The agar slide prints <strong>+53%</strong> in large green type over the first chart. In the same thirty seconds, the speaker says the chlorophyll increase was <strong>35%</strong>. Both cannot be right. It does not matter much which one is wrong, because the damage is the same: a judge who hears one number and reads another stops trusting the other numbers in the talk, including the ones that are correct.</p>
+      <p lang="zh">這份簡報示範了不這樣做的後果。洋菜那張用大大的綠字印著 <strong>+53%</strong>，而在同樣的三十秒內，講者說葉綠素的增加是 <strong>35%</strong>。兩個不可能都對。哪一個錯其實沒那麼重要，因為傷害是一樣的：聽到一個數字、讀到另一個數字的評審，會連帶不再相信這場簡報裡其他的數字，包括那些正確的。</p>
+      <p lang="en">The same slip appears twice more in smaller form. The soil salinity chart is labelled 300 mM NaCl while every other salinity experiment in the deck runs at 100 mM, and the speaker never names a concentration, so the audience has no way to tell the experiments apart. And the script calls that result a “slight 15% increase” while the plotted bars read about 1.0 against 1.17, which is nearer 17%. Neither of these is dishonest. Both are the kind of thing that costs a mark.</p>
+      <p lang="zh">同樣的狀況還以較小的規模出現兩次。土壤鹽逆境那張圖標的是 300 mM NaCl，而簡報裡其他所有鹽逆境實驗都是 100 mM，講者又從未說出濃度，觀眾因此無法分辨這些實驗。另外，講稿把那個結果說成「slight 15% increase」，但圖上的長條大約是 1.0 對 1.17，比較接近 17%。這兩件事都不算不誠實，卻都是會扣分的那一種。</p>
+      <ul class="ticks">
+        <li lang="en">Decide the number, decide the rounding, write both in one shared place.</li>
+        <li lang="zh">決定數字、決定四捨五入到哪一位，兩者都寫在同一個共用的地方。</li>
+        <li lang="en">Put the number in the title, so the speaker reads it off the screen and cannot drift.</li>
+        <li lang="zh">把數字寫進標題，讓講者直接照螢幕唸，就不會講歪。</li>
+        <li lang="en">Label every condition on the figure, including the ones that are the same as last time.</li>
+        <li lang="zh">圖上每個條件都要標，包括那些跟上一張一樣的條件。</li>
+        <li lang="en">Read the deck out loud against the script the night before, with one person holding each.</li>
+        <li lang="zh">前一晚對著講稿把整份簡報唸一遍，一人拿講稿、一人看投影片。</li>
+      </ul>
+    </div>
+
+    <!-- D8 -->
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-num">D8</span>
+        <h3><span lang="en">The self-sufficiency rule</span><span lang="zh">自足原則</span></h3>
+      </div>
+      <div class="entry-grid">
+        <div>
+          <p lang="en">This is a live stage talk. People walk in during slide nine and leave during slide fifteen. Judges look down to write. Someone in the third row is still thinking about your previous number. At any moment, a large fraction of the room is seeing this slide without the one before it.</p>
+          <p lang="zh">這是一場台上的現場簡報。有人在第九張走進來，在第十五張離開；評審會低頭寫字；第三排的某個人還在想你上一個數字。在任何一個時間點，場內都有很大一部分的人是在沒看過前一張的情況下看這一張。</p>
+          <p lang="en">So every slide has to re-establish four things on its own: what organism or system, under what condition, measured how, and what it means. That sounds like a lot of text. It is four short elements, and three of them are already labels you should have.</p>
+          <p lang="zh">所以每一張投影片都必須自己重新交代四件事：什麼生物或系統、在什麼條件下、怎麼測量、代表什麼意思。聽起來很多字，其實只是四個短短的元素，而且其中三個本來就該是你已經有的標示。</p>
+          <p lang="en"><strong>The re-entry pattern.</strong> Title carries the claim. A context tag of three to five words, small, top left or under the title, names the system. The figure shows one comparison, control beside treatment. That is it.</p>
+          <p lang="zh"><strong>重新進入的版型。</strong>標題承載主張；一個三到五個字的情境標籤，小字，放在左上或標題下方，說明系統；圖呈現一個比較，對照組緊鄰處理組。就這樣。</p>
+          <div class="tt">
+            <div class="tt-row tt-to">
+              <div class="tt-k"><span lang="en">Tag</span><span lang="zh">標籤</span></div>
+              <div class="tt-v"><span lang="en"><em>Arabidopsis</em>, agar, 37 °C</span><span lang="zh"><em>Arabidopsis</em>，洋菜，37 °C</span></div>
+            </div>
+            <div class="tt-row tt-to">
+              <div class="tt-k"><span lang="en">Title</span><span lang="zh">標題</span></div>
+              <div class="tt-v"><span lang="en">ACCD raised chlorophyll 35% under heat stress</span><span lang="zh">熱逆境下，ACCD 讓葉綠素含量提高 35%</span></div>
+            </div>
+            <div class="tt-row tt-to">
+              <div class="tt-k"><span lang="en">Figure</span><span lang="zh">圖</span></div>
+              <div class="tt-v"><span lang="en">Two bars, control and ACCD, n and error bars shown</span><span lang="zh">兩根長條：對照組與 ACCD，標出 n 與誤差線</span></div>
+            </div>
+          </div>
+          <p lang="en">The software slide is the clearest case of the opposite. It carries three competing structures at once: six numbered bullets in two columns, a screenshot whose internal text cannot be read, and a three-step strip along the bottom. A viewer arriving at that slide cannot tell which of the three is the message, and none of the three says what the speaker actually says, which is that the farmer makes the final decision.</p>
+          <p lang="zh">軟體那張是最清楚的反例。它同時放了三套互相競爭的結構：分成兩欄的六個編號條列、一張內部文字根本看不清的截圖，以及底部的三步驟橫條。剛走進來看到這張的人，分不出三者之中哪一個才是訊息，而且三者都沒有說出講者真正說的那句話：最後的決定權在農民手上。</p>
+        </div>
+        <figure class="slide">
+          <img src="assets/slides/s34.webp" alt="The software slide: a full-bleed green panel with the word Software set vertically, two columns of bullets, a screenshot, and a three-step strip." loading="lazy">
+          <figcaption>
+            <span lang="en">Three structures, one message, and the message is in none of them.</span>
+            <span lang="zh">三套結構、一個訊息，而訊息不在其中任何一套裡面。</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ BUILDS ============ -->
+<section id="builds">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">Animation</span><span lang="zh">動畫</span></p>
+    <h2><span lang="en">Build animations are for sequencing attention</span><span lang="zh">逐步動畫是用來安排注意力的</span></h2>
+    <p lang="en">A build exists so that the audience looks at one thing while you talk about that thing. That is the whole purpose. It is a good purpose, and a dense mechanism figure revealed module by module is much easier to follow than the same figure dropped in at once.</p>
+    <p lang="zh">逐步動畫存在的理由，是讓觀眾在你講某樣東西的時候，剛好正在看那樣東西。這就是它的全部用途，而且是個好用途：一張密集的機制圖一個模組一個模組地出現，會比整張一次丟出來好懂得多。</p>
+    <p lang="en">What it is not for is padding. In this deck, the circuit slide occupies eight PDF pages and the agar slide occupies ten, which is eighteen of the deck’s thirty-eight pages. In the export, nothing visibly changes between them. That costs the speaker nothing on stage, but it costs everyone else: the PDF a judge reads afterwards has eighteen pages of repeats, the wiki export does too, and anyone reviewing the deck has to click through them to find out that nothing happened.</p>
+    <p lang="zh">它不是用來灌水的。在這份簡報裡，電路圖那張占了八頁 PDF，洋菜那張占了十頁，合計是三十八頁中的十八頁。而在輸出的檔案裡，這些頁面之間看不出任何變化。這在台上對講者沒有成本，但對其他所有人都有：評審事後讀的 PDF 有十八頁重複，wiki 匯出也一樣，而任何想檢視這份簡報的人都得一頁頁點過去，才發現什麼事都沒發生。</p>
+    <div class="callout green">
+      <p lang="en"><strong>The rule: one build step per sentence you will actually say.</strong> If you will say four sentences over the circuit figure, build it in four steps, with something different visible at each one. If you will say one sentence, there is no build.</p>
+      <p lang="zh"><strong>規則：你會講幾句話，就做幾個動畫步驟。</strong>如果你在電路圖上會講四句話，就做四步，而且每一步都要有看得出來的不同。如果你只會講一句話，那就不要做動畫。</p>
+    </div>
+    <p class="small" lang="en">Export the PDF before you submit anything and page through it. If two consecutive pages look identical, either the build is doing nothing or it is doing something only you can see.</p>
+    <p class="small" lang="zh">送出任何東西之前先輸出 PDF，然後一頁一頁翻過去。如果連續兩頁看起來一模一樣，那不是動畫沒作用，就是它做的事只有你看得見。</p>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ BUDGET ============ -->
+<section id="budget">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">Arithmetic</span><span lang="zh">算一下</span></p>
+    <h2><span lang="en">The slide budget for a ten-minute talk</span><span lang="zh">十分鐘簡報的投影片預算</span></h2>
+
+    <div class="grid grid3" style="margin:28px 0">
+      <div class="card plain">
+        <div class="kpi">10</div>
+        <div class="kpi-l"><span lang="en">minutes on stage, including the handovers between eleven speakers</span><span lang="zh">台上分鐘數，還要含十一位講者之間的交接</span></div>
+      </div>
+      <div class="card plain">
+        <div class="kpi">21</div>
+        <div class="kpi-l"><span lang="en">logical slides in the deck, once the duplicate build pages are collapsed</span><span lang="zh">把重複的動畫頁合併後，實際的投影片張數</span></div>
+      </div>
+      <div class="card plain">
+        <div class="kpi red">28s</div>
+        <div class="kpi-l"><span lang="en">average per slide, which is about one claim and one figure, and nothing else</span><span lang="zh">每張平均秒數，大約只夠一個主張加一張圖，沒有其他</span></div>
+      </div>
+    </div>
+
+    <p lang="en">Twenty-eight seconds is the number that should decide the deck. It is enough to say one sentence, let the audience find the comparison in the figure, and say one more sentence. It is not enough to introduce a method, explain an axis, and then make a point. A figure that needs sixty seconds of explanation is not a bad figure. It belongs in the backup deck or on the wiki, where someone can spend sixty seconds on it.</p>
+    <p lang="zh">二十八秒這個數字應該決定整份簡報的樣子。它夠你說一句話、讓觀眾在圖上找到那個比較、再說一句話；但不夠你介紹方法、解釋座標軸、然後提出論點。需要花六十秒解釋的圖不是壞圖，它只是應該放在備用投影片或 wiki 上，讓人真的可以花那六十秒。</p>
+
+    <h3 style="margin-top:36px"><span lang="en">A shape that fits</span><span lang="zh">一個裝得下的結構</span></h3>
+    <p lang="en">Eleven slides, not twenty-one. The time left over is the margin you will need for the handovers and for the one thing that always runs long.</p>
+    <p lang="zh">十一張，不是二十一張。剩下的時間，就是你交接時、以及那個每次都會拖的環節所需要的餘裕。</p>
+
+    <table class="t">
+      <thead>
+        <tr>
+          <th><span lang="en">Beat</span><span lang="zh">段落</span></th>
+          <th><span lang="en">Slides</span><span lang="zh">張數</span></th>
+          <th><span lang="en">Time</span><span lang="zh">時間</span></th>
+          <th><span lang="en">What the title has to do</span><span lang="zh">標題要做到什麼</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span lang="en">Hook</span><span lang="zh">開場勾子</span></td><td>1</td><td>0:30</td>
+          <td><span lang="en">One question or one image. The promise type.</span><span lang="zh">一個問題或一張圖。用願景型。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Problem</span><span lang="zh">問題</span></td><td>1</td><td>0:45</td>
+          <td><span lang="en">One number, and name who loses. The stake type.</span><span lang="zh">一個數字，說清楚誰在損失。用代價型。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Solution</span><span lang="zh">解法</span></td><td>1</td><td>0:30</td>
+          <td><span lang="en">The whole system in one sentence, no figure needed.</span><span lang="zh">一句話講完整個系統，不一定需要圖。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Mechanism</span><span lang="zh">機制</span></td><td>1</td><td>1:00</td>
+          <td><span lang="en">One causal step in the right direction. One figure, built in as many steps as you have sentences.</span><span lang="zh">一個方向正確的因果步驟。一張圖，你有幾句話就做幾個動畫步驟。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Results</span><span lang="zh">結果</span></td><td>3</td><td>3:00</td>
+          <td><span lang="en">One claim each, with its own number. Never three experiments on one slide.</span><span lang="zh">每張一個主張，各自帶自己的數字。絕不要把三個實驗放同一張。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Safety</span><span lang="zh">生物安全</span></td><td>1</td><td>0:45</td>
+          <td><span lang="en">What you tested and what happened, not the word “biosafety”.</span><span lang="zh">你測了什麼、結果如何，而不是「biosafety」這個詞。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Product and impact</span><span lang="zh">產品與影響</span></td><td>2</td><td>1:30</td>
+          <td><span lang="en">Prices on the slide. What a stakeholder changed, not who you met.</span><span lang="zh">價格要寫在投影片上。說利害關係人改變了什麼，而不是你見了誰。</span></td>
+        </tr>
+        <tr>
+          <td><span lang="en">Close</span><span lang="zh">結尾</span></td><td>1</td><td>0:30</td>
+          <td><span lang="en">The same promise you opened with, word for word.</span><span lang="zh">和開場一模一樣的那句願景，一字不改。</span></td>
+        </tr>
+        <tr>
+          <td><strong><span lang="en">Total</span><span lang="zh">合計</span></strong></td>
+          <td><strong>11</strong></td><td><strong>8:30</strong></td>
+          <td><span lang="en">Ninety seconds of margin, which you will use.</span><span lang="zh">留九十秒餘裕，而你一定會用到。</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="small" lang="en">If cutting ten slides feels impossible, cut them into a backup deck rather than into a bin. Judges ask questions, and a backup slide that answers one is worth more than the same slide shown to everybody for nine seconds.</p>
+    <p class="small" lang="zh">如果要砍掉十張覺得不可能，那就把它們砍進備用投影片，而不是丟掉。評審會發問，一張能回答問題的備用投影片，價值遠大於同一張在所有人面前閃過九秒。</p>
+  </div>
+</section>
+
+<hr class="sep">
+
+<!-- ============ CHECKLIST ============ -->
+<section id="checklist">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">Copy and use</span><span lang="zh">直接拿去用</span></p>
+    <h2><span lang="en">The night before</span><span lang="zh">前一晚</span></h2>
+    <p lang="en">Two people, one deck, about forty minutes. One holds the script, the other drives the slides.</p>
+    <p lang="zh">兩個人、一份簡報、大約四十分鐘。一個人拿講稿，一個人控投影片。</p>
+
+    <div class="grid grid2" style="margin-top:26px">
+      <div class="card">
+        <h3><span lang="en">Titles</span><span lang="zh">標題</span></h3>
+        <ul class="ticks">
+          <li lang="en">Read only the titles, in order, out loud. Do they tell the story on their own?</li>
+          <li lang="zh">只把標題按順序唸出來。它們自己能不能講完整個故事？</li>
+          <li lang="en">Every title has a verb.</li>
+          <li lang="zh">每個標題都有動詞。</li>
+          <li lang="en">No title is the name of a judging criterion.</li>
+          <li lang="zh">沒有任何標題是評審項目的名稱。</li>
+          <li lang="en">No title is longer than two lines at stage size.</li>
+          <li lang="zh">以台上的字級來看，沒有標題超過兩行。</li>
+          <li lang="en">No two consecutive titles could be swapped without anyone noticing.</li>
+          <li lang="zh">沒有任何相鄰的兩個標題可以對調而不被發現。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span lang="en">Numbers</span><span lang="zh">數字</span></h3>
+        <ul class="ticks">
+          <li lang="en">Every number spoken matches the number printed, to the same rounding.</li>
+          <li lang="zh">每個講出來的數字都和印出來的一致，連四捨五入的位數都一樣。</li>
+          <li lang="en">Every chart has units, and the units are the same across the deck.</li>
+          <li lang="zh">每張圖都有單位，而且整份簡報的單位一致。</li>
+          <li lang="en">Every chart shows n and says what the error bars are.</li>
+          <li lang="zh">每張圖都標出 n，並說明誤差線代表什麼。</li>
+          <li lang="en">Every condition is labelled on the figure, including concentrations and temperatures.</li>
+          <li lang="zh">圖上每個條件都有標示，包括濃度和溫度。</li>
+          <li lang="en">Any result you cannot explain is named out loud, not hoped past.</li>
+          <li lang="zh">任何你解釋不了的結果，都用嘴巴講出來，不要指望別人沒看到。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span lang="en">Legibility</span><span lang="zh">可讀性</span></h3>
+        <ul class="ticks">
+          <li lang="en">Stand back four metres from a laptop screen. Anything you cannot read is gone from the hall.</li>
+          <li lang="zh">退到離筆電螢幕四公尺處。你讀不到的東西，在會場裡就是不存在。</li>
+          <li lang="en">Nothing you need read is below 24 pt on the canvas.</li>
+          <li lang="zh">任何需要被讀到的東西，在版面上都不低於 24 pt。</li>
+          <li lang="en">Every figure was rebuilt at slide scale, not shrunk to fit.</li>
+          <li lang="zh">每張圖都是以投影片的尺度重做的，不是縮小塞進去的。</li>
+          <li lang="en">Every label left on a figure gets said out loud. The rest are deleted.</li>
+          <li lang="zh">圖上留下的每個標示都會被唸出來，其餘的都刪掉。</li>
+          <li lang="en">The accent colour means one thing, and arrows and boxes are gone.</li>
+          <li lang="zh">重點色只代表一件事，箭頭和方框都已經拿掉。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span lang="en">The export</span><span lang="zh">輸出檔</span></h3>
+        <ul class="ticks">
+          <li lang="en">Export the PDF and page through it. No two consecutive pages look identical.</li>
+          <li lang="zh">輸出 PDF 並逐頁翻過。沒有任何相鄰兩頁看起來一樣。</li>
+          <li lang="en">Pick any slide at random and cover the ones around it. It still says what system, what condition, what readout, what it means.</li>
+          <li lang="zh">隨機挑一張，把前後都遮起來。它仍然說得出：什麼系統、什麼條件、什麼讀數、代表什麼。</li>
+          <li lang="en">Species names are italic and spelled the same way everywhere.</li>
+          <li lang="zh">物種名都是斜體，而且全篇拼法一致。</li>
+          <li lang="en">Time the run twice. The second one is the honest one.</li>
+          <li lang="zh">完整跑兩次計時。第二次那個才是真的。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout green" style="margin-top:34px">
+      <h3><span lang="en">If you only remember one thing</span><span lang="zh">如果只記得一件事</span></h3>
+      <p lang="en">Before you build anything, say out loud what the slide is for. If the sentence that comes out has a verb and a number in it, write it across the top and build underneath. If it does not, you have found the real problem, and no amount of design will cover it.</p>
+      <p lang="zh">在你動手做任何東西之前，先把這張投影片的目的講出來。如果講出來的那句話裡有動詞也有數字，就把它寫在最上面，然後在下面做圖。如果沒有，那你已經找到真正的問題了，而再多的設計也蓋不住它。</p>
+    </div>
+
+    <p style="margin-top:30px" lang="en">To see all of this applied to a real deck, slide by slide, including what we got wrong, go to the <a href="review.html">deck review</a>.</p>
+    <p style="margin-top:30px" lang="zh">想看這些原則如何逐頁套用在一份真實的簡報上，包括我們自己做錯的地方，請看<a href="review.html">逐頁檢視</a>。</p>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <p lang="en">Say It In The Title. A teaching page on scientific slide titles and bio-results slide design, written with the GEMS-Taiwan ReLEAF stage deck as the worked example.</p>
+  <p lang="zh">Say It In The Title。一份關於科學投影片標題與生物結果投影片設計的教學頁，以 GEMS-Taiwan ReLEAF 的台上簡報作為實例。</p>
+</div></footer>
+
+<div id="lb"><img src="" alt=""></div>
+<script src="assets/js/site.js"></script>
+</body></html>
