@@ -1,5 +1,7 @@
 # Say It In The Title
 
+**[Read it here →](https://timmy97-tw.github.io/say-it-in-the-title/)**
+
 A short, visual guide to writing **action-oriented scientific slide titles** and designing
 **clear biology results slides** — built for students giving a 10-minute live stage talk,
 where people walk in halfway through and every slide has to stand on its own.
@@ -14,8 +16,8 @@ in a full sentence with a verb, and that is your title.
 
 | | |
 |---|---|
-| **[Principles](principles.html)** | How action titles are built, five title types that work, and how to design the slide underneath one: plate photos, bar charts, n and error bars, stage legibility, build animations, slide budget. |
-| **[Deck review](review.html)** | A real 10-minute talk reviewed slide by slide — the message of each slide, a rewritten title, fixes for the results, layout and clarity, notes on the spoken script, and a running order that fits in ten minutes. |
+| **[Principles](https://timmy97-tw.github.io/say-it-in-the-title/principles.html)** | How action titles are built, five title types that work, and how to design the slide underneath one: plate photos, bar charts, n and error bars, stage legibility, build animations, slide budget. |
+| **[Deck review](https://timmy97-tw.github.io/say-it-in-the-title/review.html)** | A real 10-minute talk reviewed slide by slide — the message of each slide, a rewritten title, fixes for the results, layout and clarity, notes on the spoken script, and a running order that fits in ten minutes. |
 
 Both pages are bilingual: English and 繁體中文, switchable from the button in the navigation bar.
 
